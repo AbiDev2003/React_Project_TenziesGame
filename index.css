@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Karla, sans-serif;
+  margin: 0;
+  margin-bottom: 2rem;
+  background-color: #0B2434;
+  padding: 5px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+div#root{
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
+  max-width: 400px;
+}
+main{
+  background-color: #a9a7a7;
+  padding: 1rem;
+  /* height should take 100% of maximum height (100vh)*/
+  height: 100vh; 
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* css grid for Dice container components */
+.dice-container{
+  display: grid;
+  /* 2 rows and 5 coloumns */
+  grid-template: auto auto/ repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.instructions{
+  text-align: center;
+}
+
+button{
+  font-family: "Karla, sans-serif";
+}
+
+.dice-container button {
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.3rem;
+  border: none;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+button.roll-dice {
+  height: 50px;
+  white-space: nowrap;
+  width: auto;
+  padding: 6px 21px;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: navy;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Karla, sans-serif";
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button.roll-dice:hover{
+  background-color: rgb(5, 5, 89);
+  border-radius: 0.5rem;
+  text-shadow: 1rem;
+  color: rgb(153, 150, 150);
+}
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.gameIntro{
+  margin-top: 0;
+  color: white;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
+.intro-Para{
+  font-size: small;
+  font-size: 1rem;
+  color: rgb(198, 197, 197);
+}
+.gameName{
+  font-size: 3.5rem;
+  margin: 1rem;
+  text-shadow: 1rem;
+  color: rgb(210, 209, 209);
+  font-weight: 400;
+  font-family: serif;
+}
+.introHeader{
+  font-weight: 100;
+  font-size: 2rem;
+  text-decoration: underline;
+}
