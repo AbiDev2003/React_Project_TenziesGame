@@ -15,7 +15,7 @@
 
 ## 🔗 Live Demo
 
- - Live vercel demo: [View Live Project]("https://react-project-tenzies-game.vercel.app/")
+ - Live vercel demo: [View Live Project](https://react-project-tenzies-game.vercel.app/)
 
 ## 🛠️ Tech Stacks
 
